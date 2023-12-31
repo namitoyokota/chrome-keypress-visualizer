@@ -18,10 +18,10 @@ function styleDisplayPane() {
 
 let previousTimer;
 document.onkeydown = function ($event) {
-    const currentText = displayPane.innerText;
-    displayPane.innerText = currentText + $event.key;
+    const currentText = displayPane.innerHTML;
+    displayPane.innerHTML = currentText + $event.key;
 
-    if (displayPane.innerText) {
+    if (displayPane.innerHTML) {
         displayPane.style.padding = '10px 10px';
     }
 
@@ -30,7 +30,7 @@ document.onkeydown = function ($event) {
     }
 
     previousTimer = setTimeout(() => {
-        displayPane.innerText = '';
+        displayPane.innerHTML = '';
         displayPane.style.padding = '0';
     }, 1000);
 };
