@@ -1,10 +1,7 @@
 {
-    "background": { "scripts": ["background.js"] },
-    "browser_action": {
-        "default_icon": "icon-128.png",
-        "default_title": "Eye Balls"
-    },
     "name": "Keypress Visualizer",
+    "version": "0.1.0",
+    "manifest_version": 2,
     "description": "Visualizer your keyboard actions for easier screen sharing.",
     "homepage_url": "http://www.namitoyokota.com",
     "icons": {
@@ -13,6 +10,9 @@
         "128": "icon-128.png"
     },
     "permissions": ["tabs", "http://*/*", "https://*/*", "storage"],
-    "version": "0.1.0",
-    "manifest_version": 2
+    "browser_action": {
+        "default_icon": "icon-128.png",
+        "default_title": "Eye Balls"
+    },
+    "background": { "scripts": ["background.js"] }
 }
